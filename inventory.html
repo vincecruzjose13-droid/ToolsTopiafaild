@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Inventory — ToolsTopia</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <h1 class="logo">ToolsTopia</h1>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="borrow.html">Borrow/Lend</a>
+      <a href="tasks.html">Tasks</a>
+      <button id="logoutBtn" class="small-ghost">Logout</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card">
+    <h2>Inventory</h2>
+    <div class="row">
+      <input id="itemName" placeholder="Tool / Item name">
+      <input id="itemQty" type="number" placeholder="Qty" min="1" style="width:110px">
+      <button id="addItemBtn" class="primary">Add</button>
+    </div>
+    <div id="inventoryList" class="list"></div>
+  </section>
+</main>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
