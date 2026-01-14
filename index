@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>ToolsTopia — Home</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <h1 class="logo">ToolsTopia</h1>
+    <nav>
+      <a href="login.html">Login</a>
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap hero">
+  <h2>ToolsTopia — Student Resource & Productivity Platform</h2>
+  <p>Manage tools, track borrowed items, organize tasks, and access tutorial tips — all from one easy-to-use website.</p>
+  <div class="home-actions">
+    <a class="btn primary" href="login.html">Get Started</a>
+    <a class="btn ghost" href="dashboard.html">View Dashboard (requires login)</a>
+  </div>
+</main>
+
+<section class="wrap features">
+  <div class="card">
+    <h3>Inventory</h3>
+    <p>Easily add, edit, and track tools and items used for school activities.</p>
+  </div>
+  <div class="card">
+    <h3>Borrow / Lend</h3>
+    <p>Record who borrowed what and mark returned items for accountability.</p>
+  </div>
+  <div class="card">
+    <h3>Tasks</h3>
+    <p>Create tasks and reminders for practical activities and projects.</p>
+  </div>
+</section>
+
+<footer class="wrap footer">
+  <small>© 2025 ToolsTopia — Subic National High School</small>
+</footer>
+
+</body>
+</html>
