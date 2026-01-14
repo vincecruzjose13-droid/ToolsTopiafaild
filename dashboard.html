@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Dashboard — ToolsTopia</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <h1 class="logo">ToolsTopia</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="inventory.html">Inventory</a>
+      <a href="borrow.html">Borrow/Lend</a>
+      <a href="tasks.html">Tasks</a>
+      <button id="logoutBtn" class="small-ghost">Logout</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card">
+    <h2>Welcome</h2>
+    <p id="welcomeMsg">Loading user…</p>
+    <div class="quick-links">
+      <a class="btn" href="inventory.html">Open Inventory</a>
+      <a class="btn" href="borrow.html">Borrow / Lend</a>
+      <a class="btn" href="tasks.html">Tasks</a>
+    </div>
+  </section>
+
+  <section class="card" id="quickStats">
+    <h3>Quick Stats</h3>
+    <div class="stats-row">
+      <div class="stat"><div id="statItems">0</div><small>Items</small></div>
+      <div class="stat"><div id="statBorrowed">0</div><small>Borrowed</small></div>
+      <div class="stat"><div id="statTasks">0</div><small>Active Tasks</small></div>
+    </div>
+  </section>
+</main>
+
+<!-- Firebase + scripts -->
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
