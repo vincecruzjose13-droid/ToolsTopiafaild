@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Borrow/Lend — ToolsTopia</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <h1 class="logo">ToolsTopia</h1>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="inventory.html">Inventory</a>
+      <a href="tasks.html">Tasks</a>
+      <button id="logoutBtn" class="small-ghost">Logout</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card">
+    <h2>Borrow / Lend</h2>
+    <div class="row">
+      <input id="borrowItem" placeholder="Tool name">
+      <input id="borrowPerson" placeholder="Borrower name">
+      <input id="borrowDue" type="date" style="width:160px">
+      <button id="addBorrowBtn" class="primary">Add</button>
+    </div>
+    <div id="borrowList" class="list"></div>
+  </section>
+</main>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
