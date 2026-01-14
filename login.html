@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Login — ToolsTopia</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-body">
+
+<div class="login-card">
+  <h1>ToolsTopia</h1>
+  <p class="tag">All-in-one student toolkit — inventory, tasks, borrow</p>
+
+  <input id="emailInput" type="email" placeholder="Email" autocomplete="username">
+  <input id="passwordInput" type="password" placeholder="Password" autocomplete="current-password">
+
+  <button id="loginBtn" class="primary">Login</button>
+  <button id="signupBtn" class="secondary">Create account</button>
+
+  <p id="loginError" class="error"></p>
+  <p class="small muted">After login you will be redirected to the Dashboard.</p>
+</div>
+
+<!-- Firebase compat libs -->
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+
+<!-- App scripts -->
+<script src="firebase-config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
